@@ -18,10 +18,5 @@ class Bill
         return $this->price;
     }
 
-    public function getInstance() {
-        if (!self::$instance) {
-            self::$instance = new self();
-        }
-        return self::$instance;
-    }
+   
 }
