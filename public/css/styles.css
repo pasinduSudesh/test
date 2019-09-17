@@ -1,0 +1,103 @@
+
+body{
+    background-color: #777;
+  }
+  #div1 {
+    text-align: center;
+    padding: 40px;
+    background: url(../img/bck.jpg )no-repeat;
+    background-size: cover;
+    margin-top:40px;
+  }
+  
+  #div1 .jumbotron {
+    border-radius: 20px;
+    padding: 40px;
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 60px;
+  }
+  
+  @media (min-width: 300px) {
+    #div1 {
+      padding: 20px;
+    }
+  }
+  
+  body {
+    font-family: inherit;
+  }
+  
+  .site-section {
+    text-align: center;
+    /*padding: px;*/
+    margin-bottom: 20px;
+    padding: 70px;
+  }
+  
+  #paradiv p {
+    font-size: 30px;
+    max-width: 800px;
+    margin: auto;
+    /*color: rgb(232,204,103);*/
+  }
+  
+  #heading {
+    margin-bottom: 20px;
+  }
+  
+  #col1 {
+    padding: 50px;
+  }
+  
+  .fas.fa-tshirt {
+    font-size: 40px;
+    color: rgb(224,105,20);
+  }
+  
+  .fas.fa-shopping-cart {
+    font-size: 40px;
+    color: rgb(224,105,20);
+  }
+  
+  .fas.fa-cannabis {
+    font-size: 40px;
+    color: rgb(224,105,20);
+  }
+  
+  #why {
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  #logo {
+    max-height: 35px;
+    margin-top: 2px;
+    margin-left: 2px;
+    max-width: 30px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  #gal {
+    margin-left:20px;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 420px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  
