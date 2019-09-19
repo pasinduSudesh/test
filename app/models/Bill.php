@@ -8,7 +8,7 @@ class Bill
     
 {
     
-    private $price= 0 ;
+    private $price= 0 ;//price
 
     public function calcPrice($x){
         $this->price = $this->price + (float)$x;
