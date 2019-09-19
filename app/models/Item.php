@@ -6,7 +6,7 @@ require_once __DIR__ . '/../db/Database.php';
 
 class Item
 {
-    private $itemID;
+    private $itemID;   
     private $image;
     private $price;
     private $description;
