@@ -16,9 +16,9 @@ $router->addRoute("", "Home", "index");
 $router->addRoute("login", "Login", "loginUser");
 
 //register
-$router->addRoute("register", "Register", "registerUser");
+$router->addRoute("register", "Register", "registerUser"); 
 
-$router->addRoute("gallery", "Gallery", "show");
+$router->addRoute("gallery", "Gallery", "show"); 
 
 $router->addRoute("addToCart", "Cart", "addItem");
 
