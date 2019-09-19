@@ -15,7 +15,7 @@ class Bill
 
     }
     public function getTotal(){
-        return $this->price;
+        return $this->price;// return price
     }
 
    
