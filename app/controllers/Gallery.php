@@ -11,6 +11,10 @@ class Gallery extends Controller
             $item = $this->model('Item');
             $item->updateFromDB($_POST['itemID']);
             $this->view('itemProfile/index',$item->getVal());
+            // echo "qqqqqqqqqqqqqqqqqqqqqqqqssssssssssss";
+            if(isset($_POST['itemIDCart'])){
+                echo "1111111111111111111111111111";
+            }
                 
             
             

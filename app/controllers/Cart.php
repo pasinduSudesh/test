@@ -8,18 +8,28 @@ class Cart extends Controller
     public function addItem(){
         if (isset($_POST['itemIDCart'])){
             $item = $this->model('Item');
-            $item->updateFromDB($_POST['itemIDCart']);
-           
+            $item->updateFromDB($_POST['itemIDCart']);           
             $price = $item->getPrice();
+            $username = $_SESSION['username'];
+            $bill = $this->model('Bill');
+            $bill->updateFromDB($username);
+            $currentPrice = (float)$bill->getPrice();
+            $currentPrice += $price;
+            $bill->addPrice($currentPrice,$username);
+            
 
-            $_SESSION['bill'] += $price;
+
 
             
-            $bill=null;
-            if ($bill == null){
-                $bill = $this->model('Bill');
-            }
-            $bill->calcPrice($price);
+
+            
+
+            
+            // $bill=null;
+            // if ($bill == null){
+            //     $bill = $this->model('Bill');
+            // }
+            // $bill->calcPrice($price);
             $totalPrice =  $_SESSION['bill'];
             echo $totalPrice;
             

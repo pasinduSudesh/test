@@ -54,7 +54,7 @@
   <p class="price">Price:<?=$price ?></p>
   <p><?=$description?></p>
  <form action="addToCart" method="post"> 
-<a href="addToCart" ><button method="post" type="submit" id="itemIDCart" name="itemIDCart" value="<?= $itemID ?>" >Add to Cart</button></a>
+<a href="#" ><button method="post" type="submit" id="itemIDCart" name="itemIDCart" value="<?= $itemID ?>" >Add to Cart</button></a>
   
  </form>
 </div>
