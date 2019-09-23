@@ -1,7 +1,7 @@
 
 <script type="text/javascript" src="clothshop/index.js"></script>
 <?php
-session_start();
+
 require_once "connection.php";
 $x= filter_input(INPUT_GET, 'parameter', FILTER_SANITIZE_URL);
 
