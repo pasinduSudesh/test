@@ -14,7 +14,7 @@ class Bill
         $database = \Database::getInstance();
         $sql = "SELECT * FROM clientlist WHERE username=$username";
         $result = $database->query($sql);
-        $result = $result->fetch_assoc();
+        // $result = $result->fetch_assoc();
         $this->price = $result['currentBill'];
 
     }
@@ -22,14 +22,14 @@ class Bill
     public function addPrice($p,$username){
         $this->price = $p;
         $database = \Database::getInstance();
-        $sql = "INSERT INTO clientlist (currentBill) ('$p') WHERE username=$username";
+        $sql = "UPDATE `clientlist` SET `currentBill`=`{$p}` WHERE `username`=`{$username}`";
         $database->query($sql);
 
     }
 
     public function clear($username){
         $database = \Database::getInstance();
-        $sql = "INSERT INTO clientlist (currentBill) ('0') WHERE username=$username";
+        $sql = "UPDATE `clientlist` SET `currentBill`=`0` WHERE `username`=`{$username}`";
         $database->query($sql);
     }
 

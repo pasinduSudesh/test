@@ -9,8 +9,9 @@ class Cart extends Controller
         if (isset($_POST['itemIDCart'])){
             $item = $this->model('Item');
             $item->updateFromDB($_POST['itemIDCart']);           
-            $price = $item->getPrice();
+            $price = (float)$item->getPrice();
             $username = $_SESSION['username'];
+            echo $username;
             $bill = $this->model('Bill');
             $bill->updateFromDB($username);
             $currentPrice = (float)$bill->getPrice();
