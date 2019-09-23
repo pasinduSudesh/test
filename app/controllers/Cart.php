@@ -16,7 +16,8 @@ class Cart extends Controller
             $currentPrice = (float)$bill->getPrice();
             $currentPrice += $price;
             $bill->addPrice($currentPrice,$username);
-            
+            echo $currentPrice;
+
 
 
 
@@ -30,8 +31,8 @@ class Cart extends Controller
             //     $bill = $this->model('Bill');
             // }
             // $bill->calcPrice($price);
-            $totalPrice =  $_SESSION['bill'];
-            echo $totalPrice;
+            // $totalPrice =  $_SESSION['bill'];
+            // echo $totalPrice;
             
 
 
