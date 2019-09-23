@@ -6,7 +6,7 @@ require_once __DIR__ . '/../db/Database.php';
 
 class Register
 {
-    private $username;
+    private $username;   
     private $password;
 
     public function updateFromPost()
